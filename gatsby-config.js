@@ -1,3 +1,5 @@
+console.log("Testing");
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',
@@ -25,6 +27,13 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [],
+      },
+    },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
       },
     },
     {

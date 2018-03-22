@@ -34,6 +34,7 @@ export default ({ data }) => {
   )
 }
 
+console.log("Hello " + id);
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
     markdownRemark(id: { eq: $id }) {

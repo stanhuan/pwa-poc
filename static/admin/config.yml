@@ -45,7 +45,9 @@ collections:
   - name: "settings"
     label: "Settings"
     files:
-      - file: "src/settings/manifest.yml"
-        label: Manifest
-        fields: 
-          - {label: Name, name: title, widget: string}
+      - file: "src/data/manifest.yml"
+        label: "Manifest"
+        name: "manifest"
+        fields:
+          - {label: "Name", name: "title", widget: "string"}
+
